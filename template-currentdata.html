@@ -1,0 +1,24 @@
+<head>
+  <title>template-currentdata</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello documents}}
+</body>
+
+<template name="hello">
+  {{#each level1}}
+    {{#each level2}}
+      {{commonHelper1}}
+      {{commonHelper2}}
+      <button>Click Me</button>
+      <br/>
+    {{/each}}
+  {{/each}}
+
+  {{commonHelper1}}
+  {{commonHelper2}}
+  <button>Click Me</button>
+</template>
